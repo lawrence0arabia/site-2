@@ -1,0 +1,59 @@
+:root {
+    --background: #b5b5b5;
+    --foreground: #d4d4d4;
+    --shadow-light: #ffffff;
+    --shadow-dark: #7a7a7a;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: var(--foreground);
+    /* Set background color of body to --background variable */
+}
+
+#page-container {
+    width: 97.5vw;
+    height: 97.5vh;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: inset 20px 20px 60px var(--shadow-dark),
+        inset -20px -20px 60px var(--shadow-light);
+}
+
+
+main {
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    left: 25%;
+    top: 10%;
+    /* Adjusted top position for better visibility */
+    border-radius: 15px;
+    /* Added border-radius for a subtle bevel effect */
+    background: var(--background);
+    box-shadow: 20px 20px 60px var(--shadow-dark),
+        -20px -20px 60px var(--shadow-light);
+}
+
+p {
+    margin: 16px;
+    /* Adjusted margin for better spacing */
+}
+
+#glow {
+    position: absolute;
+    z-index: 1;
+    width: 1vw;
+    height: 1;
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 0 0 10vw 10vw rgba(255, 255, 255, 0.7);
+    pointer-events: none;
+    transition: transform 0.1s ease-out;
+}
