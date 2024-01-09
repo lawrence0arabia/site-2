@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var $container = $("#container");
+    var $container = $("#container"); // TODO: Generalise both to work with classes, creating new instances for each. 
     var $pageContainer = $("#page-container");
 
     $(document).on('mousemove', function (event) {
